@@ -34,7 +34,6 @@ class RestaurantsController < ApplicationController
     redirect_to '/restaurants'
   end
 
-
   def restaurant_params
     params.require(:restaurant).permit(:name)
   end
