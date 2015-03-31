@@ -32,18 +32,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :test do
-  gem 'rspec-rails'
-  gem 'capybara'
-  gem 'rspec-collection_matchers'
-  gem 'devise', github: 'plataformatec/devise'
-  gem 'omniauth-facebook'
-  gem 'poltergeist'
-  gem 'database_cleaner'
-  gem 'paperclip', :git => "http://github.com/thoughtbot/paperclip.git"
+  gem 'devise'
   gem 'aws-sdk'
   gem "figaro"
-end
+  gem 'omniauth-facebook'
+  gem 'paperclip', :git => "http://github.com/thoughtbot/paperclip.git"
+  gem 'poltergeist'
 
 
 group :development, :test do
@@ -56,4 +50,13 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'rspec-collection_matchers'
+  gem 'database_cleaner'
+end
+
 
