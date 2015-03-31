@@ -42,6 +42,7 @@ group :test do
   gem 'database_cleaner'
   gem 'paperclip', :git => "http://github.com/thoughtbot/paperclip.git"
   gem 'aws-sdk'
+  gem "figaro"
 end
 
 
