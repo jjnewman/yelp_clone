@@ -7,7 +7,7 @@ class Restaurant < ActiveRecord::Base
   :styles => { :medium => "300x300>", :thumb => "100x100>" }, 
   # :url => "https://s3-eu-west-1.amazonaws.com/yelppicbucket/:style/:image" , 
   :default_url => "https://s3-eu-west-1.amazonaws.com/yelppicbucket/:style/missing.png",
-  :url  => ":s3_eu_url"
+  # :url  => ":s3_eu_url"
 
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   
