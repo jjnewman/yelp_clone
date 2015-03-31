@@ -16,6 +16,8 @@ Devise.setup do |config|
 require "omniauth-facebook"
   config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"], :strategy_class => OmniAuth::Strategies::Facebook
 
+
+
 # ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
 
 # url("/auth/facebook/callback"))
