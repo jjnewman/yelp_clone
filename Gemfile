@@ -36,7 +36,7 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rspec-collection_matchers'
-  gem 'devise'
+  gem 'devise', github: 'plataformatec/devise'
   gem 'omniauth-facebook'
   gem 'poltergeist'
   gem 'database_cleaner'
