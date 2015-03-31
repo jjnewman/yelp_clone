@@ -13,8 +13,9 @@ Devise.setup do |config|
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   # config.omniauth :facebook, Rails.application.secrets.SECRET_PASSWORD, Rails.application.secrets.SECRET_KEY, :strategy_class => OmniAuth::Strategies::Facebook
 
+require "omniauth-facebook"
   config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"], :strategy_class => OmniAuth::Strategies::Facebook
-  
+
 # ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
 
 # url("/auth/facebook/callback"))
