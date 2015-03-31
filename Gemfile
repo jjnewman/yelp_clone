@@ -37,6 +37,7 @@ group :test do
   gem 'capybara'
   gem 'rspec-collection_matchers'
   gem 'devise'
+  gem 'omniauth-facebook'
 end
 
 

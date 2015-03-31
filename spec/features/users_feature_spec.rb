@@ -13,7 +13,7 @@ context "user not signed in and on the homepage" do
   end
 end
 
-context "user signed in on the homepage" do
+context "user signed in and on the homepage" do
 
   before do
     visit('/')
