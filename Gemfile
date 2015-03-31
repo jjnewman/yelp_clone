@@ -41,6 +41,7 @@ group :test do
   gem 'poltergeist'
   gem 'database_cleaner'
   gem 'paperclip', :git => "http://github.com/thoughtbot/paperclip.git"
+  gem 'aws-sdk'
 end
 
 
