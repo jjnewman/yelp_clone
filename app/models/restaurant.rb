@@ -2,9 +2,14 @@ class Restaurant < ActiveRecord::Base
   has_many :reviews, dependent: :destroy
   validates :name, length: {minimum: 3}, uniqueness: true
   belongs_to :user
-  has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" },  :default_url => "https://s3-eu-west-1.amazonaws.com/yelppicbucket/:style/missing.png"
+  has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" },  
+  :default_url => "https://s3-eu-west-1.amazonaws.com/yelppicbucket/:style/missing.png",
   # :default_url => "https://s3-eu-west-1.amazonaws.com/yelppicbucket/:style/missing.png"
   # :url => ":s3_eu_url" ,
+
+  :s3_host_name => 's3-eu-west-1.amazonaws.com',
+  :path => ":filename"
+
 
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   
