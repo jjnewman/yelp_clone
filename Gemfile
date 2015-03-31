@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'devise'
   gem 'aws-sdk','< 2.0'
   gem "figaro"
-  gem 'omniauth-facebook'
+  gem 'omniauth-facebook', '1.4.0'
   gem 'paperclip', :git => "http://github.com/thoughtbot/paperclip.git"
   gem 'poltergeist'
 gem 'rails_12factor'
