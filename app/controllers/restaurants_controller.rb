@@ -1,7 +1,13 @@
 class RestaurantsController < ApplicationController
+
+  before_action :authenticate_user!, :except => [:index, :show]
+  
   def index
     @restaurants = Restaurant.all
-    # raise 'Hello from the index action'
+  end
+
+  def show
+    @restaurant = Restaurant.find(params[:id])
   end
 
   def new
@@ -15,10 +21,6 @@ class RestaurantsController < ApplicationController
     else
     render 'new'
     end
-  end
-
-  def show
-    @restaurant = Restaurant.find(params[:id])
   end
 
   def edit

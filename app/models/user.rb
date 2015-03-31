@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, 
          :omniauthable, :omniauth_providers => [:facebook]
 
+  has_many :restaurants
+
 # devise_scope :user do
 #   get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
 # end
