@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "authentications" }
+  devise_for :users, :controllers => { :omniauth_callbacks => "user/authentications" }
   # 
 root to: "restaurants#index"
   
