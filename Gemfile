@@ -38,6 +38,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'omniauth-facebook', '1.4.0'
   gem 'paperclip', :git => "http://github.com/thoughtbot/paperclip.git"
   gem 'poltergeist'
+  gem 'shoulda'
 gem 'rails_12factor'
 
 group :development, :test do

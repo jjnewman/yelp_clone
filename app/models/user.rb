@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
          :omniauthable, :omniauth_providers => [:facebook]
 
   has_many :restaurants
+  has_many :reviews
+  # has_many :reviewed_restaurants, through :reviews, source :restaurant
 
 # devise_scope :user do
 #   get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
@@ -20,6 +22,9 @@ def self.from_omniauth(auth)
   end
 end
 
+# def has_reviewed?(restaurant)
+#   reviewed_restaurants.include? restaurant
+# end
 
  # def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
  #    user = User.where(:provider => auth.provider, :uid => auth.uid).first
