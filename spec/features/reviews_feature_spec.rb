@@ -17,22 +17,19 @@ def leave_review(thoughts, rating)
 end
 
 feature 'reviewing' do
-  before {Restaurant.create name: 'KFC'}
+   before {Restaurant.create name: 'KFC'}
 
-  scenario 'allows users to leave a review using a form' do
+   scenario 'allows users to leave a review using a form' do
     user_signup
     leave_review('So so', '3')
     expect(current_path).to eq '/restaurants'
     expect(page).to have_content('So so')
-  end
+   end
 
-  scenario 'displays an average rating for all reviews' do
+   scenario 'displays an average rating for all reviews' do
     user_signup
     leave_review('So so', '3')
     leave_review('Great', '5')
     expect(page).to have_content('Average rating: ★★★★☆')
-
-    
-end
-
+   end
 end
