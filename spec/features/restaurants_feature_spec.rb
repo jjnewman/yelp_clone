@@ -92,17 +92,6 @@ context 'editing restaurants' do
     expect(page).to have_content 'You need to sign in or sign up before continuing.'
     end
   end
-
-  # context 'not created by user' do
-  # it 'does not let a user edit a restaurant which they have not created' do
-  #   user_signup
-
-  #   visit '/restaurants'
-  #   click_link 'Edit KFC'
-  #   expect(page).to have_content 'You need to sign in or sign up before continuing.'
-  #   end
-  # end
-
 end
 
 context 'deleting restaurants' do
@@ -123,21 +112,5 @@ context 'deleting restaurants' do
     expect(page).to have_content 'You need to sign in or sign up before continuing.'
     end
   end
-
-  # context 'not created by user' do
-  # it 'does not let a user delete a restaurant which they have not created' do
-  #   visit '/restaurants'
-  #   click_link 'Edit KFC'
-  #   expect(page).to have_content 'You need to sign in or sign up before continuing.'
-  #   end
-  # end
-
-
 end
-
 end
-
-
-
-
-
