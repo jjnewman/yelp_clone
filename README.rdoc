@@ -1,1 +1,2 @@
 Ruby on Rails walkthrough tutorial, Makers wk9
+Users are able to add reviews and star ratings to restaurants. AWS and paperclip used for restaurant images.
