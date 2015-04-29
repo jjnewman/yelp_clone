@@ -1,3 +1,3 @@
-Ruby on Rails tutorial, Makers wk9.
+Ruby on Rails used to create a "Yelp-Clone". 
 
 Users are able to add reviews and star ratings to restaurants. AWS and paperclip used for restaurant images.
